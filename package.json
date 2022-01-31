@@ -1,0 +1,22 @@
+{
+  "name": "website-firebase",
+  "version": "1.0.0",
+  "description": "Firebase version of the twinkles website-",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twinkles-rocks/website.git"
+  },
+  "author": "Lennard Zündorf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twinkles-rocks/website/issues"
+  },
+  "homepage": "https://github.com/twinkles-rocks/website#readme",
+  "dependencies": {
+    "firebase": "^9.6.5"
+  }
+}
