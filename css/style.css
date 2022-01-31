@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,500,900");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    --font-size-xs: 11px;
+    --font-size-s: 15px;
+    --font-size-m: 20px;
+    --font-size-l: 40px;
+    --font-family: 'Quicksand', sans-serif;
+
+    --dark-white:
+            rgba(253, 253, 253, 1);
+    --twinkles-yellow:
+            rgba(253, 209, 84, 1);
+    --twinkles-violet:
+            rgba(181, 81, 228, 1);
+    --twinkles-dark-violet:
+            rgba(96, 29, 182, 1);
+    --black:
+            rgba(0, 0, 0, 1);
+
+
+    --background-color: var(--dark-white);
+    --text-color: var(--black);
+}
+
+body{
+    height: 100%;
+    margin: 30px;
+    background-color: var(--background-color) !important;
+    font-family: var(--font-family);
+}
+
