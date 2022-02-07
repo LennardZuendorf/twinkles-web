@@ -9,19 +9,16 @@
     --font-size-l: 40px;
     --font-family: 'Quicksand', sans-serif;
 
-    --dark-white:
-            rgba(253, 253, 253, 1);
-    --twinkles-yellow:
-            rgba(253, 209, 84, 1);
-    --twinkles-violet:
-            rgba(181, 81, 228, 1);
-    --twinkles-dark-violet:
-            rgba(96, 29, 182, 1);
-    --black:
-            rgba(0, 0, 0, 1);
+    --crayola: hsla(44, 98%, 66%, 1);
+    --purple: hsla(266, 73%, 41%, 1);
+    --orchid: hsla(281, 73%, 61%, 1);
+    --thistle: hsla(318, 22%, 80%, 1);
+    --white: hsla(0, 0%, 99%, 1);
+    --dim-gray: hsla(0, 0%, 41%, 1);
+    --black: hsla(0, 0%, 0%, 1);
 
 
-    --background-color: var(--dark-white);
+    --background-color: var(--white);
     --text-color: var(--black);
 }
 
@@ -37,5 +34,12 @@ body{
     padding-top: 1.875em!important;
     padding-left: 1.875em !important;
     padding-right: 1.875em !important;
+}
+
+.btn-violet{
+    background-color: var(--background-color) !important;
+    color: var(--orchid) !important;
+    outline-color: var(--orchid) !important;
+    outline-width: 5px !important;
 }
 
