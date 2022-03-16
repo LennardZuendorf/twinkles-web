@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>legal | twinkles</title>
-    <link rel="icon" type="image/svg" href="img/logo_icon.svg"/>
+    <link rel="icon" type="image/svg" href="img/twinkles_logo_icon"/>
 
     <!-- importing external css files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -22,33 +22,57 @@
 
 </head>
 
-<body>
+<body onload=" initializeCookieBanner()">
 
 <!--navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light border-bottom">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img id="navbar-icon" src="img/logo_long.svg" alt="twinkles logo" width="150">
+            <img id="navbar-icon" src="img/png/logo_long_bgwhite.png" alt="twinkles logo" height="80">
         </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       style="color: var(--black); font-size: var(--font-size-m)">|
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"
+                       style="color: var(--spanish-violet)!important; font-size: var(--font-size-m); font-weight: bold">home
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!--navbar-->
 
+
 <!--content-->
-<div class="container-fluid" style="height: 100%">
-    <div class="row align-items-center justify-content-center" style="height: 100%; padding-top: 5%">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="german-tab" data-bs-toggle="tab" data-bs-target="#german" type="button" role="tab" aria-controls="german" aria-selected="true">german</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="english-tab" data-bs-toggle="tab" data-bs-target="#english" type="button" role="tab" aria-controls="english" aria-selected="false">english</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="german" role="tabpanel" aria-labelledby="german-tab">
-                <div class="col-10 align-self-center">
-                    <h2>Datenschutzerklärung</h2>
+<div class="container-fluid content-box d-flex">
+    <div class="row">
+        <div class="col-12">
+            <nav>
+                <div class="nav nav-tabs col-12" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Datenschutz</button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="tab-content content-box" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div>
+                    <h2> Datenschutzbestimmungen - twinkles.rocks </h2>
                     <div>
                         <h3 id="einleitung-ueberblick" class="adsimple-311866188">Einleitung und Überblick</h3>
                         <p>Wir haben diese Datenschutzerklärung (Fassung 30.10.2021-311866188) verfasst, um Ihnen gemäß der Vorgaben der <a class="adsimple-311866188" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=311866188" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> und anwendbaren nationalen Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche &#8211; und die von uns beauftragten Auftragsverarbeiter (z. B. Provider) &#8211; verarbeiten, zukünftig verarbeiten werden und welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.<br />
@@ -819,29 +843,33 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="english" role="tabpanel" aria-labelledby="english-tab">
-                <div class="col-10 align-self-center">
-                    <h2>Data Protection Statement</h2>
-                    <h4>Currently not available. Please refer to the German version! Thank you for your understanding.</h4>
-                </div>
             </div>
         </div>
     </div>
 </div>
 <!--content-->
 
+<!--cookie banner, by Kolappan Nathan-->
+<!--found at: https://github.com/kolappannathan/bootstrap-cookie-banner-->
+<div id="cookie-banner" class="alert alert-dark text-center fixed-bottom hide" role="alert">
+    <div class="alert-heading" style="font-size: var(--font-size-m) !important;">
+        <i class="fas fa-cookie"></i> This website uses cookies.
+    </div>
+    <div style="font-size: var(--font-size-s) !important;">
+        But only to keep technical functionalities working! <a href="legal.html" style="color: var(--spanish-violet)"> learn more</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="hideCookieBanner()">got it</button>
+    </div>
+</div>
+<!--cookie banner-->
+
 <!--footer-->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-1"></p>
-    <p class="col-sm-5 mb-0 text-muted justify">© 2021 Lennard Zündorf</p>
+    <p class="col-md-5 mb-0 text-muted">© twinkles - 2022</p>
 
-    <ul class="nav col-sm-5 justify-content-end">
+    <ul class="nav col-md-5 justify-content-end">
         <li class="nav-item"><a href="legal.html" class="nav-link px-2 text-muted">legal</a></li>
-        <li class="nav-item"><a href="mailto:info@twinkles.rocks" class="nav-link px-2 text-muted"><i class="bi bi-envelope-fill" style="color: var(--orchid) !important"></i></a></li>
-        <!--
-        <li class="nav-item"><a href="" class="nav-link px-2 text-muted"><i class="bi bi-instagram" style="color: var(--twinkles-violet) !important"></i></a></li>
-        <li class="nav-item"><a href="" class="nav-link px-2 text-muted"><i class="bi bi-linkedin" style="color: var(--twinkles-violet) !important"></i></a></li>
-        -->
+        <li class="nav-item"><a href="mailto:hello@twinkles.rocks" class="nav-link px-2 text-muted"><i class="bi bi-envelope-fill" style="color: var(--spanish-violet)"></i></a></li>
     </ul>
     <p class="col-md-1"></p>
 </footer>
