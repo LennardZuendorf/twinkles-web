@@ -71,9 +71,9 @@ body{
 
 @media (min-width: 501px) {
     .content-box{
-        padding: 5em !important;
-        padding-top: 10em !important;
-        padding-bottom: 13em !important;
+        padding: 2em !important;
+        padding-top: 5em !important;
+        padding-bottom: 6em !important;
         height: 100%;
         width: 100%;
     }
@@ -129,4 +129,8 @@ body{
 .test{
     font-weight: bold !important;
     color: var(--spanish-violet) !important;
+}
+
+.content-box-legal{
+    padding: 2em !important;
 }
