@@ -59,11 +59,25 @@ body{
     border-color: var(--light-cultured) !important;
 }
 
-.content-box{
-    padding: 1.875em !important;
-    height: 100%;
-    width: 100%;
+@media (max-width: 500px) {
+    .content-box{
+        padding: 1.875em !important;
+        padding-bottom: 10em !important;
+        height: 100%;
+        width: 100%;
+    }
 }
+
+@media (min-width: 501px) {
+    .content-box{
+        padding: 1.875em !important;
+        padding-bottom: 20em !important;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
 
 #cookie-banner {
     color: var(--midnight-violet) !important;
@@ -105,4 +119,8 @@ body{
 .active{
     color: var(--spanish-violet)!important;
     font-weight: bold !important;
+}
+
+.tw-footer{
+    padding-top: 1.875em !important;
 }
