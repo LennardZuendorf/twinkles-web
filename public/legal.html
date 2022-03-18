@@ -63,8 +63,54 @@
 <!--navbar-->
 
 <!--content-->
-<div>
-
+<div class="container content-box">
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3 align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                Datenschutz - twinkles.rocks
+            </button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                Nutzungsbedingungen - twinkles app
+            </button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                Code of Conduct - twinkles app
+            </button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                Kontakt
+            </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4>
+                    Datenschutzbestimmungen
+                </h4>
+                <h5>
+                    twinkles website
+                </h5>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4>
+                    Nutzungsbedingungen
+                </h4>
+                <h5>
+                    twinkles app
+                </h5>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <h4>
+                    Code of Conduct
+                </h4>
+                <h5>
+                    twinkles app
+                </h5>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4>
+                    Kontakt
+                </h4>
+            </div>
+        </div>
+    </div>
 </div>
 <!--content-->
 
@@ -81,7 +127,7 @@
 <!--cookie banner-->
 
 <!--footer-->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top tw-footer">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top tw-footer fixed-bottom">
     <p class="col-md-4 mb-0">© 2022 twinkles</p>
 
     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -91,10 +137,13 @@
     <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="about.html" class="nav-link px-2" style="color: var(--midnight-violet)!important;">about</a></li>
         <li class="nav-item"><a href="legal.html" class="nav-link px-2" style="color: var(--midnight-violet)!important;">legal</a></li>
+        <li class="nav-item"><a class="nav-link px-2" style="color: var(--midnight-violet)!important;">|</a></li>
 
         <li class="nav-item">
             <a href="mailto:hello@twinkles.rocks" class="nav-link px-2 text-muted">
                 <i class="bi bi-envelope-fill" style="color: var(--spanish-violet)"></i>
+                hello@twinkles.rocks
+
             </a>
         </li>
     </ul>

@@ -136,3 +136,16 @@ body{
     padding-bottom: 0!important;
     padding-top: 1em!important;
 }
+
+.active{
+    background-color: var(--cultured) !important;
+    color: var(--spanish-violet) !important;
+}
+
+.tab-pane{
+    background-color: var(--light-cultured) !important;
+}
+
+.nav-link{
+    color: var(--dim-gray) !important;
+}
