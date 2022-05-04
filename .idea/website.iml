@@ -9,5 +9,6 @@
     <orderEntry type="library" name="classic-10_7_dtp" level="application" />
     <orderEntry type="library" name="embed" level="application" />
     <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="script" level="application" />
   </component>
 </module>
