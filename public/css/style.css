@@ -34,13 +34,10 @@ body{
     font-family: var(--font-family);
 }
 
-body{
-    background-color: var(--light-cultured) !important;
-}
-
 .navbar{
     background-color: var(--light-cultured) !important;
     color: var(--midnight-violet) !important;
+    box-shadow: none !important;
 }
 
 .normal-style{
@@ -53,16 +50,45 @@ body{
 }
 
 .border-top{
-    border-color: var(--dim-gray) !important;
+    border-color: var(--cultured) !important;
 }
+
 .border-bottom{
     border-color: var(--light-cultured) !important;
 }
 
-.content-box{
-    padding: 1.875em !important;
-    height: 100%;
-    width: 100%;
+@media (max-width: 500px) {
+    .content-box{
+        padding: 2em !important;
+        padding-top: 5em !important;
+        padding-bottom: 5em !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer{
+        padding: 0.5em !important;
+        padding-bottom: 0!important;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .content-box{
+        padding: 2em !important;
+        padding-top: 5em !important;
+        padding-bottom: 6em !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content-box-small{
+        padding: 0.5em !important;
+        padding-bottom: 0!important;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 #cookie-banner {
@@ -84,10 +110,11 @@ body{
     }
 }
 
-.btn-primary{
+.btn-violet{
     color: var(--light-cultured) !important; ;
     background-color: var(--spanish-violet) !important;
     border-color: var(--spanish-violet) !important;
+    box-shadow: var(--light-purple);
 }
 
 .bi-envelope{
@@ -98,11 +125,27 @@ body{
     display: none;
 }
 
-.nav-link{
-    color: var(--dim-gray) !important;
-}
-
 .active{
     color: var(--spanish-violet)!important;
     font-weight: bold !important;
+}
+
+.tw-footer{
+    background-color: var(--light-cultured) !important;
+    padding: 3em!important;
+    padding-bottom: 0!important;
+    padding-top: 1em!important;
+}
+
+.active{
+    background-color: var(--cultured) !important;
+    color: var(--spanish-violet) !important;
+}
+
+.tab-pane{
+    background-color: var(--light-cultured) !important;
+}
+
+.nav-link{
+    color: var(--dim-gray) !important;
 }
