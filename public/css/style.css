@@ -7,7 +7,9 @@
     --font-size-s: 15px;
     --font-size-m: 20px;
     --font-size-l: 40px;
-    --font-family: 'Quicksand', sans-serif;
+    --quicksand: 'Quicksand', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
 
     /* CSS HEX */
     --midnight-violet: #19113cff;
@@ -31,7 +33,7 @@ body{
     height: 100%;
     margin: 10px;
     background-color: var(--light-cultured) !important;
-    font-family: var(--font-family);
+    font-family: var(--quicksand);
 }
 
 .navbar{
@@ -59,9 +61,7 @@ body{
 
 @media (max-width: 500px) {
     .content-box{
-        padding: 2em !important;
-        padding-top: 5em !important;
-        padding-bottom: 5em !important;
+        padding: 3em !important;
         height: 100%;
         width: 100%;
     }
@@ -76,9 +76,7 @@ body{
 
 @media (min-width: 501px) {
     .content-box{
-        padding: 2em !important;
-        padding-top: 5em !important;
-        padding-bottom: 6em !important;
+        padding: 3em !important;
         height: 100%;
         width: 100%;
     }
@@ -148,4 +146,90 @@ body{
 
 .nav-link{
     color: var(--dim-gray) !important;
+}
+
+.btn-primary{
+    background-color: var(--spanish-violet) !important;
+    color: var(--light-cultured) !important;
+    border-color: var(--spanish-violet) !important;
+}
+
+section01 {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+section02 {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+
+@media (min-width: @screen-sm-min) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+
+.container-fluid{
+    padding-left: 10em  !important;
+}
+
+h4{
+    font-size: var(--font-size-m);
+    font-weight: bold;
+    color: var(--spanish-violet)
+}
+
+h5{
+    font-size: var(--font-size-m);
+    font-weight: normal;
+    color: var(--black)
+}
+
+p{
+    font-family: var(--roboto);
+    color: var(--black);
+    font-weight: normal;
+}
+
+h1{
+    font-weight: bold;
+    color: var(--spanish-violet)
+}
+
+h3{
+    font-weight: bold;
+    color: var(--spanish-violet)
+}
+
+a{
+    color: var(--light-purple) !important;
+}
+
+ul{
+    font-family: var(--roboto);
+    color: var(--black);
+    font-weight: normal;
 }
