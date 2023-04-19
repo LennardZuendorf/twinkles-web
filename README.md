@@ -1,6 +1,6 @@
-# website component
+# twinkles website component
 twinkles public website
 
-## Links
+## Tech Stack
 
-## Status
+- HTML, CSS, JavaScript with Bootstrap
