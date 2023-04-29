@@ -14,7 +14,7 @@ function hideCookieBanner(){
     cookieBanner.classList.add("hide");
 
     console.log("hiding cookie banner in the future")
-    console.log(window.localStorage.getItem("z.me_cookieCheck"))
+    console.log(window.localStorage.getItem("twinkles_cookieChec"))
 }
 
 /* Checks the localstorage and shows Cookie banner based on it. */
